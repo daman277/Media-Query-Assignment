@@ -1,0 +1,10 @@
+header{
+    background-color: rgb(224, 224, 224);
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    header{
+    background-color: blue;
+}
+}

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+ .boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+    min-height: 100vh;
+ }
+ .item{
+    padding: 20px;
+    text-align: center;
+ }
+ .box1{
+    background-color: red;
+    color: white;
+ }
+ .box2{
+    background-color: green;
+    color: white;
+ }
+ .box3{
+    background-color: blue;
+    color: white;
+ }
+ .box4{
+    background-color: orange;
+    color: white;
+ }
+ @media screen and (min-width: 768px) {
+    .boxes{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box3 box3"
+        "box4 box4 box4";
+    }
+ }
